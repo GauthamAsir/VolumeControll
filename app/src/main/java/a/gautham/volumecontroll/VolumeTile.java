@@ -15,7 +15,7 @@ public class VolumeTile extends TileService {
         super.onClick();
 
         AudioManager audioManager = (AudioManager) getApplicationContext().getSystemService(Context.AUDIO_SERVICE);
-        audioManager.adjustStreamVolume(AudioManager.AUDIOFOCUS_NONE, AudioManager.ADJUST_SAME, AudioManager.FLAG_SHOW_UI);
+        audioManager.adjustStreamVolume(AudioManager.STREAM_MUSIC, AudioManager.ADJUST_SAME, AudioManager.FLAG_SHOW_UI);
 
     }
 }

@@ -3,15 +3,17 @@ plugins {
 }
 
 android {
-    compileSdk 30
+    compileSdk 33
 
     defaultConfig {
         applicationId "a.gautham.volumecontroll"
         minSdk 25
-        targetSdk 30
+        targetSdk 33
         versionCode 1
         versionName "1.0"
-
+        Date date = new Date()
+        String d = date.format('_ddMMYYYY')
+        setProperty("archivesBaseName", "Volume_Controll_Mellow_v$versionName$d")
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
